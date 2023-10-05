@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background: #FCFCFF;
+    background: linear-gradient(to bottom, #FCFCFF, #FFFFFF);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/*page-1 styles*/
+.page1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.custom-h2,
+.custom-h1,
+.custom-h3 {
+    margin: 0;
+    /* Remove margin */
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
+}
+.custom-h2 {
+    font-size: 2.25rem;
+    /* 2.25rem = 36px (36 / 16 = 2.25) */
+}
+.custom-h1 {
+    font-size: 5rem;
+    /* 4rem = 64px (64 / 16 = 4) */
+}
+.custom-h3 {
+    font-size: 1.25rem;
+    /* 1.25rem = 20px (20 / 16 = 1.25) */
+}
+.highlight-text {
+    font-weight: bold;
+    color: #FDC500;
+}
+/* Media query for smaller screens (less than 500px) */
+@media (max-width: 500px) {
+
+    .mystory h2 {
+        text-align: center;
+    }
+
+    .mystory {
+
+        text-align: left;
+    }
+
+    .page1 {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        height: 100vh !important;
+    }
+
+    #aboutDiv {
+        display: contents;
+        /* or display: flex; or any other display property based on your requirement */
+    }
+
+    .burger-icon {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+
+    /* Add your styles for screens less than or equal to 500px here */
+    .custom-h2 {
+        font-size: 2rem;
+        /* Example font size for smaller screens */
+    }
+
+    .custom-h1 {
+        font-size: 4rem;
+        /* Example font size for smaller screens */
+    }
+
+    .custom-h3 {
+        font-size: 1rem;
+        /* Example font size for smaller screens */
+    }
+
+
+}
+/*page-2 styles*/
+.page2{
+    width: 60vw;
+}
+.story-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* This will center horizontally */
+    align-items: center;
+    /* This will center vertically */
+}
+.mystory {
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mystory h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
